@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+/* Exercicio 10: Conversao de Celsius para Fahrenheit e Kelvin */
+int main(void) {
+    float celsius, fahrenheit, kelvin;
+
+    printf("Digite a temperatura em graus Celsius: ");
+    scanf("%f", &celsius);
+
+    /* Constantes com casas decimais evitam divisao inteira (9/5 = 1) */
+    fahrenheit = (celsius * 9.0f / 5.0f) + 32.0f;
+    kelvin = celsius + 273.15f;
+
+    printf("Fahrenheit: %.2f F\n", fahrenheit);
+    printf("Kelvin: %.2f K\n", kelvin);
+
+    return 0;
+}
