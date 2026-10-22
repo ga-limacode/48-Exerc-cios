@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+    int a, b;
+
+    printf("Digite o primeiro numero inteiro positivo: ");
+    scanf("%d", &a);
+    printf("Digite o segundo numero inteiro positivo: ");
+    scanf("%d", &b);
+
+    printf("\nSoma: %d + %d = %d\n", a, b, a + b);
+    printf("Subtracao: %d - %d = %d\n", a, b, a - b);
+    printf("Multiplicacao: %d * %d = %d\n", a, b, a * b);
+
+    if (b != 0) {
+        printf("Quociente (divisao inteira): %d / %d = %d\n", a, b, a / b);
+        printf("Resto: %d %% %d = %d\n", a, b, a % b);
+        printf("\nObs.: na divisao de inteiros a parte fracionaria e descartada (truncada).\n");
+    } else {
+        printf("Divisao e resto indefinidos: o segundo numero e zero.\n");
+    }
+
+    return 0;
+}
