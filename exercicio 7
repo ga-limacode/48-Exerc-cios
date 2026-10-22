@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void) {
+    char nome[] = "LM7805";
+    float tensao = 5.0f;
+    int lote = 20240815;
+    char classe = 'A';
+
+    printf("=========== FICHA TECNICA ===========\n");
+    printf("Componente..........: %s\n", nome);
+    printf("Tensao nominal (V)..: %.1f\n", tensao);
+    printf("Lote de fabricacao..: %d\n", lote);
+    printf("Classe de eficiencia: %c\n", classe);
+    printf("=====================================\n");
+
+    return 0;
+}
