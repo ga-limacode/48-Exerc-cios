@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+/* Exercicio 2: Formatacao tabular de precos */
+int main(void) {
+    float teclado = 89.90f;
+    float mouse = 45.50f;
+    float monitor = 850.00f;
+
+    printf("%-10s R$ %8.2f\n", "Teclado", teclado);
+    printf("%-10s R$ %8.2f\n", "Mouse", mouse);
+    printf("%-10s R$ %8.2f\n", "Monitor", monitor);
+
+    return 0;
+}
