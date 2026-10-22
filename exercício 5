@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+/* Exercicio 5: Delimitadores e caracteres especiais */
+int main(void) {
+    char abreChave = '{';
+    char asterisco = '*';
+    char pontoVirgula = ';';
+
+    /* As aspas simples ao redor de %c sao texto literal da frase;
+       o %c e o especificador que imprime o valor da variavel. */
+    printf("A chave de abertura vale '%c'\n", abreChave);
+    printf("O asterisco vale '%c'\n", asterisco);
+    printf("O ponto e virgula vale '%c'\n", pontoVirgula);
+
+    /* Caractere de escape: \' imprime a aspa simples literal */
+    printf("Exemplo de escape: \\' imprime \'\n");
+
+    return 0;
+}
