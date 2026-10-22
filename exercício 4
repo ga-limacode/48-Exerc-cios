@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int requisicoes = 15230;
+    float memoriaRam = 67.35f;
+    char estado = 'A';
+    char protocolo[] = "HTTPS";
+
+    printf("=== Diagnostico === Requisicoes atendidas: %d | Uso de RAM: %.2f%% | Estado: %c | Protocolo: %s\n",
+           requisicoes, memoriaRam, estado, protocolo);
+
+    return 0;
+}
