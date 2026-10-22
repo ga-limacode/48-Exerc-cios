@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int matricula;
+    float estatura;
+    char inicial;
+    char curso;
+
+    printf("Matricula: ");
+    scanf("%d", &matricula);
+    printf("Estatura: ");
+    scanf("%f", &estatura);
+    printf("Inicial do nome: ");
+    scanf("%s", &inicial);
+    printf("Curso: ");
+    scanf("%s", &curso);
+
+    return 0;
+}
