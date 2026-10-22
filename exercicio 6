@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void) {
+    int agencia = 1234;
+    int contaDestino = 567890;
+    float valor = 1250.75f;
+    char canal = 'A';
+
+    printf("==============================\n\n");
+    printf("   COMPROVANTE DE TRANSFERENCIA\n\n");
+    printf("Agencia remetente: %d\n\n", agencia);
+    printf("Conta de destino: %d\n\n", contaDestino);
+    printf("Valor liquidado: R$ %.2f\n\n", valor);
+    printf("Canal de atendimento: %c\n\n", canal);
+    printf("==============================\n\n");
+
+    return 0;
+}
