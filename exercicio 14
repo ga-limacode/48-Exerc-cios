@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main() {
+    char nome[50];
+    int idade;
+    float peso;
+    char genero;
+
+    printf("Primeiro nome: ");
+    scanf("%49s", nome);           
+    printf("Idade: ");
+    scanf("%d", &idade);
+    printf("Peso (kg): ");
+    scanf("%f", &peso);
+    printf("Genero (M/F): ");
+    scanf(" %c", &genero);         
+
+    printf("\n--- Dados capturados ---\n");
+    printf("Nome: %s\n", nome);
+    printf("Idade: %d anos\n", idade);
+    printf("Peso: %.2f kg\n", peso);
+    printf("Genero: %c\n", genero);
+
+    return 0;
+}
