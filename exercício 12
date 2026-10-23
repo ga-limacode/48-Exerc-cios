@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+#define PRECO_LITRO 5.89f 
+
+int main(void) {
+    float distancia, litros, rendimento, custoPorKm;
+
+    printf("Distancia percorrida (km): ");
+    scanf("%f", &distancia);
+    printf("Combustivel consumido (litros): ");
+    scanf("%f", &litros);
+
+    if (litros <= 0.0f || distancia <= 0.0f) {
+        printf("Valores invalidos: distancia e litros devem ser maiores que zero.\n");
+        return 1;
+    }
+
+    rendimento = distancia / litros;
+    custoPorKm = (litros * PRECO_LITRO) / distancia;
+
+    printf("\nPreco do litro: R$ %.2f\n", PRECO_LITRO);
+    printf("Rendimento: %.2f km/l\n", rendimento);
+    printf("Custo medio por km: R$ %.2f\n", custoPorKm);
+
+    return 0;
+}
