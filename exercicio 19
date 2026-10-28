@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    float numerador, divisor, resultado;
+
+    printf("Digite o numerador: ");
+    scanf("%f", &numerador);
+
+    printf("Digite o divisor: ");
+    scanf("%f", &divisor);
+
+    if (divisor != 0.0) {
+        resultado = numerador / divisor;
+        printf("Resultado: %.2f\n", resultado);
+    } else {
+        printf("Erro: divisao por zero!\n");
+    }
+
+    return 0;
+}
+
