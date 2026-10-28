@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int idade, contribuicao;
+
+    printf("Digite sua idade: ");
+    scanf("%d", &idade);
+
+    printf("Digite os anos de contribuicao: ");
+    scanf("%d", &contribuicao);
+
+    if (idade >= 65 || contribuicao >= 35) {
+        printf("Requisitos atendidos para aposentadoria.\n");
+    } else {
+        printf("Requisitos nao atendidos.\n");
+    }
+
+    return 0;
+}
