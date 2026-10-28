@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int estoque;
+
+    printf("Digite a quantidade em estoque: ");
+    scanf("%d", &estoque);
+
+    if (estoque < 50) {
+        printf("ALERTA: Necessidade urgente de reposicao!\n");
+    } else {
+        printf("Estoque suficiente.\n");
+    }
+
+    return 0;
+}
