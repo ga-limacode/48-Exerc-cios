@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    float valor, total;
+
+    printf("Digite o valor da compra: R$ ");
+    scanf("%f", &valor);
+
+    if (valor > 250.00) {
+        total = valor - (valor * 0.10);
+    } else {
+        total = valor;
+    }
+
+    printf("Valor final: R$ %.2f\n", total);
+
+    return 0;
+}
