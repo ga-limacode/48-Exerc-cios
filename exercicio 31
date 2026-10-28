@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    float consumo, total;
+
+    printf("Digite o consumo em kWh: ");
+    scanf("%f", &consumo);
+
+    if (consumo < 0) {
+        printf("Consumo invalido.\n");
+    } else {
+        if (consumo <= 100) {
+            total = consumo * 0.40;
+        } else if (consumo <= 250) {
+            total = consumo * 0.65;
+        } else {
+            total = consumo * 0.90;
+        }
+
+        total = total + 15.00;
+
+        printf("Valor total da conta: R$ %.2f\n", total);
+    }
+
+    return 0;
+}
