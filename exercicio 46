@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+    int idade, maiorIdade = 0, contador = 0;
+    float salario, soma = 0, media;
+
+    printf("Digite a idade: ");
+    scanf("%d", &idade);
+
+    while (idade >= 0) {
+        if (contador == 0 || idade > maiorIdade) {
+            maiorIdade = idade;
+        }
+
+        printf("Digite o salario: ");
+        scanf("%f", &salario);
+
+        soma = soma + salario;
+        contador++;
+
+        printf("Digite a idade: ");
+        scanf("%d", &idade);
+    }
+
+    if (contador > 0) {
+        media = soma / contador;
+
+        printf("Entrevistados: %d\n", contador);
+        printf("Media salarial: %.2f\n", media);
+        printf("Maior idade: %d", maiorIdade);
+    } else {
+        printf("Nenhum entrevistado registrado.");
+    }
+
+    return 0;
+}
