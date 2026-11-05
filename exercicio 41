@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int numero, soma = 0, contador = 0;
+
+    printf("Digite um numero (0 para sair): ");
+    scanf("%d", &numero);
+
+    while (numero != 0) {
+        soma = soma + numero;
+        contador++;
+
+        printf("Digite outro numero (0 para sair): ");
+        scanf("%d", &numero);
+    }
+
+    printf("Quantidade: %d\n", contador);
+    printf("Soma: %d", soma);
+
+    return 0;
+}
