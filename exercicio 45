@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    float nota;
+
+    printf("Digite sua nota: ");
+    scanf("%f", &nota);
+
+    while (nota < 0 || nota > 10) {
+        printf("Nota invalida! Digite novamente: ");
+        scanf("%f", &nota);
+    }
+
+    printf("Nota valida: %.2f", nota);
+
+    return 0;
+}
