@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int n, contador = 0;
+
+    printf("Digite um numero maior que 1: ");
+    scanf("%d", &n);
+
+    if (n <= 1) {
+        printf("Numero invalido!");
+        return 0;
+    }
+
+    while (n > 1) {
+        n = n / 2;
+        contador++;
+    }
+
+    printf("Quantidade de divisoes: %d", contador);
+
+    return 0;
+}
