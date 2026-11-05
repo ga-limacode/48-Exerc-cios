@@ -1,0 +1,23 @@
+ #include <stdio.h>
+
+int main() {
+    int n;
+    float numero, soma = 0, media;
+
+    printf("Quantos numeros deseja digitar? ");
+    scanf("%d", &n);
+
+    for (int i = 1; i <= n; i++) {
+        printf("Digite um numero: ");
+        scanf("%f", &numero);
+
+        soma = soma + numero;
+    }
+
+    media = soma / n;
+
+    printf("Soma: %.2f\n", soma);
+    printf("Media: %.2f\n", media);
+
+    return 0;
+}
