@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    float renda, parcela, margem;
+    int cadastro;
+
+    printf("Digite sua renda: ");
+    scanf("%f", &renda);
+
+    printf("Digite o valor da parcela: ");
+    scanf("%f", &parcela);
+
+    printf("Cadastro (0 = adimplente, 1 = inadimplente): ");
+    scanf("%d", &cadastro);
+
+    margem = renda * 0.30;
+
+    if (parcela <= margem && cadastro == 0) {
+        printf("Emprestimo aprovado!");
+    } else {
+        printf("Emprestimo recusado!");
+    }
+
+    return 0;
+}
