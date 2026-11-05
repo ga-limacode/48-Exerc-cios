@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int inicio, fim, passo;
+
+    printf("Digite o inicio: ");
+    scanf("%d", &inicio);
+
+    printf("Digite o fim: ");
+    scanf("%d", &fim);
+
+    printf("Digite o passo: ");
+    scanf("%d", &passo);
+
+    if (passo <= 0 || inicio > fim) {
+        printf("Valores invalidos!");
+        return 0;
+    }
+
+    for (int i = inicio; i <= fim; i += passo) {
+        printf("%d ", i);
+    }
+
+    printf("\n");
+
+    for (int i = fim; i >= inicio; i -= passo) {
+        printf("%d ", i);
+    }
+
+    return 0;
+}
